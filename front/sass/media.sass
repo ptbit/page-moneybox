@@ -1,0 +1,791 @@
+// @media screen and (max-width: 2560px)
+//   .types
+//     padding-bottom: 0
+//     margin-bottom: 150px
+@media screen and (max-width: 1700px)
+  .about
+    &__title 
+      font-size: 85px
+    &__container 
+      // max-width: 90%
+      padding-right: 0
+      &::before
+        right: -40px
+      &::after
+        bottom: -80px
+    &__img
+      flex: 1
+      &--gamepad
+        left: 15%
+    &__list
+      min-width: 400px
+
+// @media screen and (max-width: 1600px)
+@media screen and (max-width: 1400px)
+  .about
+    &__img
+      height: 600px
+      &--gamepad
+        width: 150px
+        left: 10%
+        // bottom: 150px
+  .service
+    &__title
+      margin-top: 0
+
+@media screen and (max-width: 1350px)
+  .hero
+    &__container
+      padding-right: 40px
+  .types
+    &__items
+      padding-right: 50px
+    &__item
+      width: 310px
+      height: 212px
+
+@media screen and (max-width: 1300px)
+  .about
+    &__img
+      transform: scale(0.8)
+      transform-origin: center
+      height: 550px
+      &--basketball
+        animation: 13s infinite move-basketball-tablet linear
+      &--soccer
+        width: 110px
+        bottom: 157px
+    &__list 
+      left: -135px
+      transform: scale(0.8)
+      transform-origin: center
+    &__title
+      transform: scale(1.25)
+      transform-origin: left
+
+
+@media screen and (max-width: 1250px)
+  .section
+    &__title
+      font-size: 70px
+      text-wrap: nowrap
+  .about
+    &__title
+      // font-size: 70px
+      margin-bottom: 50px
+    &__img
+      min-width: 800px
+      &--gamepad
+        width: 120px
+        left: 20%
+        bottom: 100px
+      &--soccer
+        width: 80px
+      &--hand
+        width: 200px
+      &--basketball
+        width: 100px
+        animation: 18s infinite move-basketball linear
+@media screen and (max-width: 1200px)
+  .about
+    &__container
+      &::before
+        width: 180px
+        height: 180px
+      &::after
+        width: 220px
+        height: 220px
+@media screen and (max-width: 1150px)
+  .section
+    &__title
+      line-height: 70px
+      font-size: 70px
+  .service
+    &__title
+      margin-bottom: 0
+    &__crown
+      transform: scale(0.9)
+    &__left
+      transform: scale(0.9)
+      transform-origin: right top
+    &__right
+      transform: scale(0.9)
+      transform-origin: left top
+  .types
+    &__items
+      padding-right: 100px
+    &__item
+      width: 310px
+      height: 212px
+@media screen and (max-width: 1150px)
+  .about
+    &__list
+      left: -200px
+@media screen and (max-width: 1100px)
+  .page
+    &__bg2
+      background-image: url('../img/bg2-tab.png')
+      height: 900px
+  .hero
+    &__left
+      align-self: start
+      margin-top: 40px
+      padding-left: 32px
+    &__right
+      height: 480px
+    &__title
+      // font-size: 74px
+      line-height: 60px
+    &__subtitle
+      font-size: 22px
+      margin-bottom: 30px
+      width: 311px
+  .about
+    &__img
+      min-width: 600px
+      background-size: cover
+      background-position: center
+      &--basketball
+        width: 100px
+        right: 100px
+        animation: 13s infinite move-basketball-tablet linear
+      &--gamepad
+        left: 10%
+    &__list
+      left: -135px
+      transform-origin: right
+  .service
+    // &__title
+      // font-size: 60px
+    &__middle
+      height: 350px
+    &__crown
+      transform: scale(0.9)
+    &__left, &__right
+      transform: scale(0.8)
+  .types
+    padding-bottom: 100px
+    &__title
+      margin-bottom: 40px
+    &__item
+      width: 270px
+      height: 183px
+      margin-right: -35px
+      &--2,&--4
+        margin-right: -70px
+    &__item-img
+      width: 104px
+      height: 104px
+    &__item-text
+      font-size: 22px
+      right: 50px
+      bottom: 15px
+      &--last
+        right: 65px
+  .contacts
+    background: url('../img/contacts/contacts-bg-tab.jpg') no-repeat 50% 0/cover
+
+@media screen and (max-width: 1000px)
+  .section
+    &__title
+      line-height: 60px
+      font-size: 60px
+  .about
+    margin-top: 30px
+    &__container
+      &::before
+        width: 150px 
+        height: 150px
+        right: 0
+      &::after
+        width: 150px 
+        height: 150px
+        right: 0
+    &__title
+      margin-bottom: 50px
+    &__img
+      top: 50px
+      transform: scale(1)
+      height: 420px
+      min-width: 520px
+      &--soccer
+        bottom: 100px
+      &--gamepad
+        bottom: 30px
+    &__list
+      transform: scale(1)
+      left: -70px
+    &__title
+      transform: scale(1)
+    &__items
+      gap: 20px
+  .types
+    &__title
+      margin-bottom: 35px
+    &__items
+      padding-right: 70px
+    &__item
+      width: 200px
+      height: 136px
+      margin-right: -25px
+      &--2,&--4
+        margin-right: -65px
+    &__item-img
+      width: 80px
+      height: 80px
+      top: 13px
+    &__item-text
+      font-size: 18px
+      right: 30px
+      bottom: 14px
+      &--last
+        right: 50px
+  .contacts
+    &__title
+      margin-bottom: 50px
+    &__container
+      padding-bottom: 80px
+    &__item
+      background: url('../img/contacts/item-bg-tab.png') no-repeat 0% 0/contain
+      width: 336px
+      height: 60px
+      &::before
+        width: 86px
+        background: url('../img/contacts/item-before-bg-tab.png') no-repeat 0% 0/contain
+      &--img
+        width: 28px
+        height: 28px
+        margin-left: 26px 
+        margin-right: 28px
+        margin-top: 1px
+      &--text
+        font-size: 20px
+        line-height: 36px
+        letter-spacing: 0.4px
+  .service
+    margin-top: 50px
+
+
+@media screen and (max-width: 950px)
+  .hero
+    &__right
+      position: absolute
+      bottom: 0
+      right: 40px
+      height: 450px
+
+@media screen and (max-width: 900px)
+  .hero
+    &__right
+      height: 440px
+  .about
+    &__img
+      transform: scale(0.9)
+      transform-origin: left
+    &__list
+      transform: scale(0.9)
+      transform-origin: left top
+    &__title
+      transform: scale(1.111)
+      transform-origin: left
+  .service
+    // margin-top: -20px
+    &__middle
+      height: 300px
+    &__crown
+      transform: scale(0.7)
+    &__left, &__right
+      transform: scale(0.7)
+@media screen and (max-width: 850px)
+  .hero
+    &__right
+      height: 410px
+  .about
+    &__img
+      transform: scale(0.8)
+      top: 50px
+      transform-origin: left
+    &__list
+      left: -130px
+//------------------------------- TABLET -------------------------------
+//------------------------------- TABLET -------------------------------
+//------------------------------- TABLET -------------------------------
+//------------------------------- TABLET -------------------------------
+@media screen and (max-width: 768px)
+  .hero
+    &__left
+      padding-left: 30px
+    &__right
+      right: 10px
+      height: 380px
+    &__title
+      margin-bottom: 10px
+    &__terminal
+      &--bal
+        width: 81px
+        height: 81px
+        top: 30px
+        background-image: url(../img/hero/ball-tab.png)
+      &--hand
+        width: 158px
+        height: 120px
+        right: -30px
+        bottom: 130px
+        background-image: url(../img/hero/hand-tab.png)
+
+  .about
+    &__container
+      justify-content: start
+      flex-direction: row-reverse
+      padding: 0 20px
+      min-width: 100%
+      &::before
+        background-image: url('../img/about/about-before-tab.png')
+        right: 37%
+        width: 123px
+        height: 123px
+      &::after
+        background-image: url('../img/about/about-after-tab.png')
+        right: -10px
+        width: 140px
+        height: 140px
+        bottom: -50px
+    &__title
+      margin-bottom: 37px
+    &__list
+      left: 0
+      transform: scale(1)
+      min-width: 50%
+    &__title
+      transform: scale(1)
+    &__items
+      gap: 21px
+    &__item
+      font-size: 22px
+      &::before
+        min-width: 38px
+        height: 34px
+    &__img
+      min-width: 60%
+      max-width: 60%
+      transform: scale(1)
+      top: 40px
+      right: 40px
+      height: 415px
+      background-image: url('../img/about/man-tab.png')
+
+      &--basketball
+        width: 87px
+        top: 13px
+        right: 12px
+        z-index: -1
+        animation: 13s infinite move-basketball-tablet linear
+
+      &--soccer
+        width: 80px
+        position: absolute
+        right: 40px
+        bottom: 80px
+        animation: 8s infinite jump-ball-tablet linear
+
+      &--hand
+        display: none
+      &--gamepad
+        width: 114px
+        position: absolute
+        bottom: 20px
+        left: 60px
+  .service
+    &__middle
+      height: 280px
+    &__crown
+      transform: scale(0.6)
+    &__left, &__right
+      transform: scale(0.6)
+    &__btn
+      margin-bottom: 40px
+    &__block
+      &--left
+        background-image: url('../img/service/left-bg-border-tab.png')
+        background-size: contain
+      &--right
+        background-image: url('../img/service/right-bg-border-tab.png')
+        background-size: contain
+    &__text
+      &--right
+        left: 75px
+
+  .types
+    background-image: url('../img/types/types-bg-tab.png')
+    margin-bottom: 20px
+    &__title
+      margin-top: 0px
+  .contacts
+    background: url('../img/contacts/contacts-bg-mob.jpg') no-repeat 50% 0/cover
+
+@media screen and (max-width: 715px)
+  .types
+    &__items
+        transform: scale(0.8)
+        transform-origin: center
+@media screen and (max-width: 700px)
+  .section
+    &__title
+      font-size: 58px
+      line-height: 58px
+  .hero
+    &__left
+      padding-left: 20px
+    &__right
+      height: 330px
+    &__terminal
+      &--hand
+        bottom: 100px
+    &__title
+      line-height: 46px
+      margin-bottom: 14px
+    &__subtitle
+      font-size: 18px
+      margin-bottom: 24px
+  .about
+    &__img
+      margin-left: -50px 
+      transform: scale(1.1)
+    &__list
+      transform: scale(0.9)
+      transform-origin: top left
+    &__title
+      transform: scale(1.111)
+      transform-origin: left
+  .service
+    &__middle
+      height: 250px
+    &__crown
+      transform: scale(0.5)
+    &__left, &__right
+      transform: scale(0.55)
+
+//CHANGE MODE **************************************************************************
+//CHANGE MODE **************************************************************************
+//CHANGE MODE **************************************************************************
+@media screen and (max-width: 650px)
+  .section
+    &__title
+      font-size: 50px
+      line-height: 40px
+  .page
+    &__bg2
+      background-image: url('../img/bg2-mob.png')
+  .hero
+    height: auto
+    &__container
+      padding-top: 30px
+      padding-right: 23px
+      padding-left: 23px
+      flex-direction: column
+      gap: 35px
+      align-items: center
+    &__left
+      align-self: center
+      padding-left: 0
+      margin-top: 0
+    &__right
+      position: relative
+      right: 0
+      padding-top: 0
+    &__terminal
+      &--bal
+        top: 10px
+        left: 10px
+        background-image: url(../img/hero/ball-mob.png)
+      &--hand
+        width: 138px
+        height: 105px
+        bottom: 130px
+        right: -40px
+        background-image: url(../img/hero/hand-mob.png)
+    &__btn
+      margin: 0 auto
+  .about
+    margin-top: 0
+    &__container
+      padding: 0 20px
+      flex-direction: column-reverse
+      gap: 35px
+      &::before
+        display: none
+      &::after
+        bottom: -30px
+        animation: 7s infinite move-club linear
+    &__img
+      position: relative
+      margin: 0 auto
+      min-width: auto
+      max-width: 500px
+      min-height: 400px
+      inset: 0
+      transform: scale(1)
+      background: url('../img/about/man-mob.png') no-repeat 50% 0/contain
+
+      &::before
+        content: ''
+        display: block
+        background: url('../img/about/about-before-tab.png') no-repeat 0 0/cover
+        width: 123px
+        height: 123px
+        position: absolute
+        top: 15px
+        animation: 4s infinite move-roketka ease-in-out
+
+    &__list
+      transform: scale(1)
+      width: 100%
+    &__title
+      transform: scale(1)
+    &__title
+      text-align: center
+    &__items
+      max-width: fit-content
+      margin: 0 auto
+  .service
+    &__middle
+      flex-direction: column
+      height: auto
+    &__crown
+      display: none
+    &__left, &__right
+      transform: scale(1)
+      height: 390px
+    &__block
+      width: 100%
+      &::before, &::after
+        display: none
+      &--left
+        background-image: url('../img/service/left-mob.png')
+        background-size: contain
+      &--right
+        background-image: url('../img/service/right-mob.png')
+        background-size: contain
+    &__text
+      padding: 0 40px
+      letter-spacing: 0.4px
+      left: 0
+      right: 0
+      text-align: center
+      width: 90%
+      margin: 0 auto
+  .types
+    background-image: url('../img/types/types-bg-mob.png')
+    background-position-y: 70%
+    &__items
+      padding-left: 20px
+      padding-right: 20px
+      transform: scale(1)
+      flex-wrap: wrap
+      justify-content: center
+      row-gap: 30px
+    &__item
+      margin: 0
+      background-image: url('../img/types/item-bg-mob.png')
+  .contacts
+    &__title
+      margin-bottom: 20px
+    &__container
+      gap: 0
+    &__row
+      flex-direction: column
+      align-items: center
+    &__item
+      margin-bottom: 20px
+
+@media screen and (max-width: 600px)
+  .service
+    &__left, &__right
+      height: 360px
+      min-width: 100%
+    &__text
+      bottom: 30px
+  .types
+    padding-bottom: 60px
+    &__items
+      padding-left: 10px
+      padding-right: 10px
+@media screen and (max-width: 550px)
+  .section
+    &__title
+      font-size: 45px
+      line-height: 40px
+  .about
+    &__img
+      min-width: 350px
+      left: 50%
+      transform: translateX(-50%)
+    &__list
+      transform: scale(1)
+    &__title
+      transform: scale(1)
+    &__item
+      font-size: 20px
+  .service
+    &__left, &__right
+      height: 340px
+
+@media screen and (max-width: 500px)
+  .about
+    &__title
+      margin-bottom: 20px
+    &__item
+      &::before
+        min-width: 30.297px
+        height: 27.469px
+    &__img
+      min-height: 380px
+      max-width: 450px
+      &--gamepad
+        bottom: 5px
+        left: 10px
+        width: 100px
+        height: 100px
+      &--soccer
+        right: 0
+        left: 70%
+        bottom: 50px
+        animation: 8s infinite jump-ball-mobile linear
+
+      &--basketball
+        top: 0
+        right: 40px 
+        width: 76px
+  .service
+    &__left, &__right
+      height: 320px
+    &__text
+      padding: 0 10px
+      font-size: 20px
+      letter-spacing: 0.4px
+      line-height: 22px
+
+@media screen and (max-width: 480px)
+  .about
+    &__img
+      min-height: 350px
+      &--soccer
+        width: 70px
+@media screen and (max-width: 450px)
+  .about
+    &__img
+      min-height: 335px
+  .service
+    &__left, &__right
+      height: 290px
+  .types
+    &__items
+      row-gap: 50px
+    &__item
+      margin: 0
+      width: 166px
+      height: 113px
+      &-text
+        font-size: 24px
+        right: 0
+        bottom: -30px
+        left: 0
+        text-align: center
+        padding-left: 20px
+  .contacts
+    &__item
+      margin-bottom: 10px
+@media screen and (max-width: 440px)
+  .hero
+    &__left
+      width: 100%
+@media screen and (max-width: 430px)
+  .about
+    &__img
+      max-width: 400px
+      min-height: 320px
+      &--soccer
+        width: 60px
+@media screen and (max-width: 400px)
+  .hero
+    &__subtitle
+      width: auto
+    &__btn
+      width: 90%
+  .service
+    &__left, &__right
+      height: 270px
+    &__text
+      bottom: 20px
+@media screen and (max-width: 390px)
+  .about
+    &__img
+      min-height: 300px
+      &--soccer
+        width: 70px
+@media screen and (max-width: 375px)
+  .section
+    &__title
+      text-wrap: wrap
+    &__item
+      width: 135px
+      height: 91px
+      &-img
+        width: 62px
+        height: 62px
+      &-text
+        font-size: 20px
+    &__item
+      transform: scale(0.9)
+@media screen and (max-width: 350px)
+  .service
+    &__left, &__right
+      height: 250px
+  .contacts
+    &__item
+      transform: scale(0.85)
+@media screen and (max-width: 340px)
+  .section
+    &__title
+      font-size: 47px
+      line-height: 37px
+  .hero
+    &__container
+      padding-left: 15px
+      padding-right: 15px
+@media screen and (max-width: 320px)
+  .about
+    &__container
+      &::after
+        width: 100px
+        height: 100px
+        bottom: -10px
+    &__img
+      max-width: 340px
+      &--soccer
+        bottom: 60px
+        width: 60px
+      &--gamepad
+        width: 90px
+        height: 90px
+        left: 20px
+  
+@media screen and (max-width: 312px)
+  .types
+    &__item
+      width: 115px
+      height: 78px
+      &-img
+        width: 55px
+        height: 55px
+      &-text
+        font-size: 18px
+        padding-left: 10px
+  .contacts
+    &__item
+      transform: scale(0.8)
+      margin-bottom: 0
+@media screen and (max-width: 300px)
+  .service
+    &__left, &__right
+      height: 240px

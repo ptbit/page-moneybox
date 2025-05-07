@@ -1,0 +1,65 @@
+body.dark 
+  background-color: #040613
+  .page
+    background-color: #040613
+  .page__bg2
+    background: url('../img/bg2-desk-dark.png') no-repeat 50% 50%/cover
+  .hero__shadow
+    background: linear-gradient(180deg, rgba(4, 6, 19, 0.00) 0%, #040613 100%)
+  .about__img
+    background: url('../img/about/man-desk-dark.png') no-repeat 50% 0/contain
+  .page__types
+    background: url('../img/types/types-bg-desk-dark.png') no-repeat 50% 50%/cover
+  .contacts
+    background: url('../img/contacts/contacts-bg-desk-dark.jpg') no-repeat 50% 0/cover
+  .service__block--right
+    background: url('../img/service/right-bg-border-desk-dark.png') no-repeat 0 0/cover
+  .service__block--left
+    background: url('../img/service/left-bg-border-desk-dark.png') no-repeat 0 0/cover
+  .types__item
+    background: url('../img/types/item-bg-desk-dark.png') no-repeat 50% 0/cover
+  .contacts__item
+    background: url('../img/contacts/item-bg-desk-dark.png') no-repeat 0% 0/contain
+  @media screen and (max-width: 1100px)
+    .page__bg2
+      background-image: url('../img/bg2-tab-dark.png')
+    .contacts
+      background: url('../img/contacts/contacts-bg-tab-dark.jpg') no-repeat 50% 0/cover
+    .about
+      &__img
+        background-size: cover
+        background-position: center
+  @media screen and (max-width: 1000px)
+    .contacts
+      &__item
+          background: url('../img/contacts/item-bg-tab-dark.png') no-repeat 0% 0/contain
+  @media screen and (max-width: 768px)
+    .about
+      &__img
+        background-image: url('../img/about/man-tab-dark.png')
+    .service
+      &__block
+        background-size: contain
+        &--left
+          background-image: url('../img/service/left-bg-border-tab-dark.png')
+        &--right
+          background-image: url('../img/service/right-bg-border-tab-dark.png')
+    .types
+      background-image: url('../img/types/types-bg-tab-dark.png')
+    .contacts
+      background: url('../img/contacts/contacts-bg-mob-dark.jpg') no-repeat 50% 0/cover
+  @media screen and (max-width: 650px)  
+    .about
+      &__img
+        background: url('../img/about/man-mob-dark.png') no-repeat 50% 0/contain
+    .service
+      &__block
+        background-size: contain
+        &--left
+          background-image: url('../img/service/left-mob-dark.png')
+        &--right
+          background-image: url('../img/service/right-mob-dark.png')
+    .types
+      background-image: url('../img/types/types-bg-mob-dark.png')
+      &__item
+        background-image: url('../img/types/item-bg-mob-dark.png')
