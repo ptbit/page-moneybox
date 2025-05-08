@@ -114,37 +114,37 @@ body.light
       position: absolute
       bottom: 0
       left: 14px
-      animation: fly 2.5s ease-in-out infinite alternate
+      animation: fly 4.5s ease-in-out infinite alternate
 
     &--2
       position: absolute
       right: 0
       bottom: 40px
-      animation: fly 1s ease-in-out infinite alternate
+      animation: fly 3s ease-in-out infinite alternate
 
     &--3
       position: absolute
       left: 0
       bottom: 28px
-      animation: fly 2s ease-in-out infinite alternate
+      animation: fly 4s ease-in-out infinite alternate
 
     &--4
       position: absolute
       left: 10px
       top: 55px
-      animation: fly 2.5s ease-in-out infinite alternate
+      animation: fly 4.5s ease-in-out infinite alternate
 
     &--6
       position: absolute
       right: 10px
       top: 51px
-      animation: fly 1s ease-in-out infinite alternate
+      animation: fly 3s ease-in-out infinite alternate
 
     &--7
       position: absolute
       right: 10px
       top: 0
-      animation: fly 1.5s ease-in-out infinite alternate
+      animation: fly 3.5s ease-in-out infinite alternate
 
 
 
@@ -194,6 +194,10 @@ body.light
       padding: 26px 26px 0 30px
       &::after
         animation: light 2.33s linear infinite
+    &--4
+      background: none
+      &::after
+        animation: light 3.2s linear infinite
       
   &__box
     width: 100% 
@@ -231,7 +235,7 @@ body.light
     &::before
       content: ''
       display: block
-      width: 14px
+      min-width: 14px
       height: 14px
       background: url('../img/icon.svg')  no-repeat 0% 0%/contain
   &__elements
