@@ -32,6 +32,7 @@ body.light
   background-color: $color-bg
 
   &__hero
+    position: relative
     height: 572px
     background: url('../img/bg-hero-desk.jpg') no-repeat 0 -155px/cover
     @media screen and (min-width: 600px) and (orientation: landscape) and (min-height: 501px)
@@ -40,8 +41,17 @@ body.light
       background: url('../img/bg-hero-tab.jpg') no-repeat 50% 0/cover 
     @media screen and (max-width: 600px) and (orientation: portrait)
       background: url("../img/bg-hero-mob.jpg") no-repeat 50% 0%/cover
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      bottom: -30px
+      height: 120px
 
+      background: linear-gradient(180deg, rgba(0, 0, 34, 0) 0%, $color-bg 100%)
 .hero
+  
   &__container
     display: flex
     padding-bottom: 77px
@@ -131,8 +141,8 @@ body.light
     &--4
       position: absolute
       left: 10px
-      top: 55px
-      animation: fly 4.5s ease-in-out infinite alternate
+      top: 60px
+      animation: fly2 2.5s ease-in-out infinite alternate
 
     &--6
       position: absolute
@@ -194,10 +204,10 @@ body.light
       padding: 26px 26px 0 30px
       &::after
         animation: light 2.33s linear infinite
-    &--4
-      background: none
-      &::after
-        animation: light 3.2s linear infinite
+    // &--4
+    //   background: none
+    //   &::after
+    //     animation: light 3.2s linear infinite
       
   &__box
     width: 100% 
@@ -281,6 +291,12 @@ body.light
     transform: translateY(0) rotateZ(1deg) 
   100%
     transform: translateY(15px) rotateZ(0deg) 
+
+@keyframes fly2
+  0%
+    transform: translateY(0) rotateZ(1deg) 
+  100%
+    transform: translateY(22px) rotateZ(0deg) 
 
 @keyframes light
   0%
