@@ -1,6 +1,10 @@
+$color-white: #FFF
+$color-bg: #000022
+$color-pink: #FF267E
+
 html 
   scroll-behavior: smooth
-  background-color: #00003D
+  background-color: $color-bg
 
 $font-tektur-semibold: Tektur-SemiBold, sans-serif //600
 $font-favbet-text-regular: Favbet Text Regular, sans-serif//400
@@ -10,13 +14,8 @@ $font-favbet-text-regular: Favbet Text Regular, sans-serif//400
 // $font-alumni-sans-medium: Alumni Sans Medium, sans-serif//500
 // $font-alumni-sans-regular: Alumni Sans Regular, sans-serif//400
 
-// $color-blue: #005
-// $color-white: #FFF
-// $color-pink: #FF267E
-// $color-green: #05C48A
-
 body
-  background-color: #000022
+  background-color: $color-bg
   overscroll-behavior: none
   font-family: $font-tektur-semibold
   overflow-x: hidden
@@ -26,11 +25,11 @@ body
     height: auto
 
 body.light
-  background-color: #000022
+  background-color: $color-bg
 
 .page
   overflow: hidden
-  background-color: #000022
+  background-color: $color-bg
 
   &__hero
     height: 572px
@@ -64,14 +63,14 @@ body.light
 
   &__title
     margin-bottom: 16px
-    color: #FFF
+    color: $color-white
     text-align: center
     text-shadow: 0px 0px 8px rgba(30, 174, 255, 0.60), 0px 0px 8px rgba(30, 174, 255, 0.60)
     font-family: $font-tektur-semibold
     font-size: 22px
     line-height: normal
   &__text
-    color: #FFF
+    color: $color-white
     text-align: center
     font-family: $font-favbet-text-regular
     font-size: 15px
@@ -106,16 +105,53 @@ body.light
     height: 100%
     padding: 75px 127px 113px 91px
   &__money
-    background: url("../img/money.png") no-repeat 0% 0%/contain
-    width: 100%
+    position: relative 
     height: 100%
+    &--1
+      position: absolute
+      bottom: 0
+      left: 14px
+      animation: fly 2.5s ease-in-out infinite alternate
+
+    &--2
+      position: absolute
+      right: 0
+      bottom: 40px
+      animation: fly 1s ease-in-out infinite alternate
+
+    &--3
+      position: absolute
+      left: 0
+      bottom: 28px
+      animation: fly 2s ease-in-out infinite alternate
+
+    &--4
+      position: absolute
+      left: 10px
+      top: 55px
+      animation: fly 2.5s ease-in-out infinite alternate
+
+    &--6
+      position: absolute
+      right: 10px
+      top: 51px
+      animation: fly 1s ease-in-out infinite alternate
+
+    &--7
+      position: absolute
+      right: 10px
+      top: 0
+      animation: fly 1.5s ease-in-out infinite alternate
+
+
 
 .moneybox
+  margin-bottom: 25px
   &__title
     width: fit-content
     margin: 0 auto
     position: relative
-    color: #FFF
+    color: $color-white
     text-align: center
     text-shadow: 0px 0px 8px rgba(30, 174, 255, 0.60), 0px 0px 8px rgba(30, 174, 255, 0.60)
     font-family: $font-tektur-semibold
@@ -134,7 +170,103 @@ body.light
     justify-content: center
     gap: 10px
   &__item
-    border: 1px dashed lightgrey
+    // border: 1px dashed lightgrey
     background: url('../img/item-desk-bg.png')  no-repeat 0% 0%/contain
     width: 362px
     height: 358px
+    &--1
+      padding: 33px 38px 0 20px
+    &--2
+      padding: 28px 27px 0 11px
+    &--3
+      padding: 26px 26px 0 30px
+  &__box
+    width: 100% 
+    &--1
+      padding: 33px 26px 0 48px
+      height: 153px
+      background: url('../img/item-text-desk-bg-1.png')  no-repeat 0% 0%/contain
+    &--2
+      height: 205px
+      padding: 35px 33px 0 62px
+      background: url('../img/item-text-desk-bg-2.png')  no-repeat 0% 0%/contain
+    &--3
+      padding: 26px 25px 0 35px
+      background: url('../img/item-text-desk-bg-3.png')  no-repeat 0% 0%/contain
+      height: 286px
+  &__sub-title
+    margin-bottom: 16px
+    color: $color-white
+    font-family: $font-tektur-semibold
+    font-size: 17px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+  &__element
+    margin-bottom: 8px
+    color: $color-white
+    font-family: $font-favbet-text-regular
+    font-size: 15px
+    position: relative
+    display: flex
+    gap: 8px
+    align-items: center
+    &::before
+      content: ''
+      display: block
+      width: 14px
+      height: 14px
+      background: url('../img/icon.svg')  no-repeat 0% 0%/contain
+  &__elements
+    margin-bottom: 8px
+    list-style: none
+    display: flex
+    column-gap: 8px
+    row-gap: 4px
+    flex-wrap: wrap
+    color: $color-white
+    font-family: $font-favbet-text-regular
+    font-size: 15px
+    &--up
+      margin-bottom: 4px
+    li
+      position: relative
+      display: flex
+      gap: 8px
+      align-items: center
+      color: $color-pink
+      &::before
+        content: ''
+        display: block
+        width: 12px
+        height: 12px
+        background: url('../img/arrow.svg')  no-repeat 0% 0%/contain
+      &:first-child
+        color: white
+        &::before
+          display: none
+  &__sub-text
+    color: $color-white
+    font-family: $font-favbet-text-regular
+    font-size: 15px
+    line-height: normal
+
+// @keyframes fly 
+//   0% transform: perspective(900px) rotateX(55deg) rotateZ(45deg) translateZ(0px)
+//   100% transform: perspective(900px) rotateX(55deg) rotateZ(45deg) translateZ(25px)
+
+@keyframes fly
+  0%
+    transform: translateY(0) rotateZ(1deg) 
+  100%
+    transform: translateY(15px) rotateZ(0deg) 
+// @keyframes fly2
+//   0%
+//     transform: translateY(0) rotateZ(1deg) 
+//   100%
+//     transform: translateY(15px) rotateZ(0deg) 
+// @keyframes fly7
+//   0%
+//     transform: translateY(0) rotateZ(1deg) 
+//   100%
+//     transform: translateY(15px) rotateZ(0deg) 
