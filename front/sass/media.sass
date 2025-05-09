@@ -90,8 +90,15 @@
       font-size: 12px
     &__elements
       font-size: 12px
+
     &__sub-text
       font-size: 12px
+  .page.en
+    .moneybox
+      &__elements
+        &--up
+          li
+            font-size: 12px
 @media screen and (max-width: 890px) and (max-height: 350px) and (orientation: landscape)
   .hero
     &__left
@@ -170,8 +177,6 @@
       height: fit-content
       position: relative
       padding: 25px 0
-      // margin-left: -20px
-      // margin-right: -20px
       &::before
         content: ''
         opacity: 0.8
@@ -183,7 +188,6 @@
         width: 218px
         height: 100%
         background: url('../img/item-desk-bg-tab.png') no-repeat 0% 50%/contain
-        // transform: translateY(-50%)
       &::after
         content: ''
         opacity: 0.8
@@ -236,6 +240,14 @@
       font-size: 15px
     &__sub-text
       font-size: 15px
+  .glitch
+    .glitch-img
+      background: url("../img/hero-text-tab.png") no-repeat 0 0/cover
+  .page.en
+    .glitch
+      .glitch-img
+        background: url("../img/en/hero-text-tab.png") no-repeat 0 0/cover
+
 @media screen and (max-width: 768px) and (max-height: 375px) and (orientation: landscape)
   .hero
     &__btn
@@ -400,7 +412,13 @@
       transform: scale(0.6)
     &__left
       margin-top: -310px
-
+  .glitch
+    .glitch-img
+      background: url("../img/en/hero-text-mob.png") no-repeat 0 0/cover
+  .page.en
+    .glitch
+      .glitch-img
+        background: url("../img/en/hero-text-mob.png") no-repeat 0 0/cover
 @media screen and (max-width: 370px)
   .hero
     &__left

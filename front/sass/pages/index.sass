@@ -2,6 +2,23 @@ $color-white: #FFF
 $color-bg: #000022
 $color-pink: #FF267E
 
+
+
+
+//ONLY FOR TEST
+.langLinks
+  position: absolute
+  top: 0
+  left: 0
+  
+  display: flex
+  gap: 5px
+.langLink
+  color: $color-white
+  font-size: 15px
+  padding: 5px
+  border: 1px dashed grey
+
 html 
   scroll-behavior: smooth
   background-color: $color-bg
@@ -265,7 +282,7 @@ body.light
     margin-bottom: 8px
     list-style: none
     display: flex
-    column-gap: 8px
+    column-gap: 6px
     row-gap: 4px
     flex-wrap: wrap
 
@@ -290,6 +307,11 @@ body.light
         color: $color-white
         &::before
           display: none
+    .white
+      color: $color-white
+      display: inline-block
+      &::before
+        display: none
   &__sub-text
     color: $color-white
     font-family: $font-favbet-text-regular
@@ -346,6 +368,10 @@ body.light
     right: 0
     height: 100%
     background: url("../img/hero-text-desk.png") no-repeat 0 0/cover
+.page.en
+  .glitch
+    .glitch-img
+      background: url("../img/en/hero-text-desk.png") no-repeat 0 0/cover
 
 .glitch-img:nth-child(n+2)
   opacity: 0
