@@ -169,7 +169,9 @@
         position: absolute
         display: block
         left: 0
-        top: 0
+        top: 50%
+        min-height: 220px
+        transform: translateY(-50%)
         bottom: 0
         width: 218px
         height: 100%
@@ -180,14 +182,16 @@
         position: absolute
         display: block
         left: 0
-        top: 0
+        top: 50%
+        min-height: 220px
+        transform: translateY(-50%) rotate(180deg)
         bottom: 0
         width: 218px
         margin-left: auto 
         height: 100%
         animation: none
         background: url('../img/item-desk-bg-tab.png') no-repeat 0% 50%/contain
-        transform: rotate(180deg) 
+        // transform: rotate(180deg) 
     &__tab-light
       display: block
       position: absolute
