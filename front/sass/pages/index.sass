@@ -1,16 +1,16 @@
 $color-white: #FFF
 $color-bg: #000022
 $color-pink: #FF267E
+$font-tektur-semibold: Tektur-SemiBold, sans-serif //600
+$font-favbet-text-regular: Favbet Text Regular, sans-serif//400
 
 
 
-
-//ONLY FOR TEST
+// ONLY FOR TEST START
 .langLinks
   position: absolute
   top: 0
   left: 0
-  
   display: flex
   gap: 5px
 .langLink
@@ -18,18 +18,21 @@ $color-pink: #FF267E
   font-size: 15px
   padding: 5px
   border: 1px dashed grey
+.changeTheme
+  color: $color-white
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 5px
+  cursor: pointer
+  border: 1px dashed grey
+
+// ONLY FOR TEST END
+
 
 html 
   scroll-behavior: smooth
   background-color: $color-bg
-
-$font-tektur-semibold: Tektur-SemiBold, sans-serif //600
-$font-favbet-text-regular: Favbet Text Regular, sans-serif//400
-
-// $font-suisse-intl-semibold: SuisseIntl-SemiBold, sans-serif//600
-// $font-alumni-sans-bold: Alumni Sans Bold, sans-serif//700
-// $font-alumni-sans-medium: Alumni Sans Medium, sans-serif//500
-// $font-alumni-sans-regular: Alumni Sans Regular, sans-serif//400
 
 body
   background-color: $color-bg
@@ -50,7 +53,6 @@ body.light
 
   &__hero
     position: relative
-    // height: 572px
     background: url('../img/bg-hero-desk.jpg') no-repeat 50% 0/cover
     @media screen and (min-width: 600px) and (orientation: landscape) and (min-height: 501px)
       background: url('../img/bg-hero-desk.jpg') no-repeat 0 -150px/cover 
@@ -68,7 +70,6 @@ body.light
       pointer-events: none
       background: linear-gradient(180deg, rgba(0, 0, 34, 0) 0%, $color-bg 100%)
 .hero
-  
   &__container
     display: flex
     justify-content: center
@@ -186,8 +187,6 @@ body.light
       right: 10px
       top: 0
       animation: fly 3.5s ease-in-out infinite alternate
-
-
 
 .moneybox
   margin-bottom: 25px
@@ -318,10 +317,6 @@ body.light
     font-size: 15px
     line-height: normal
 
-// @keyframes fly 
-//   0% transform: perspective(900px) rotateX(55deg) rotateZ(45deg) translateZ(0px)
-//   100% transform: perspective(900px) rotateX(55deg) rotateZ(45deg) translateZ(25px)
-
 @keyframes fly
   0%
     transform: translateY(0) rotateZ(1deg) 
@@ -359,7 +354,7 @@ body.light
     opacity: 0.1
   100%
     opacity: 0.6
-
+//GLITCH!!!
 .glitch
   position: relative
   .glitch-img

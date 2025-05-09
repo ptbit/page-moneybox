@@ -19,3 +19,7 @@
 //     behavior: 'smooth',
 //   });
 // });
+const body = document.querySelector('body');
+document.querySelector('.changeTheme').addEventListener('click', () => {
+  body.classList.toggle('dark');
+});

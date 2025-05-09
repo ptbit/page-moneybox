@@ -1,5 +1,16 @@
-// body.dark 
-//   background-color: #040613
+body.dark 
+  background-color: #090B18
+  .hero
+    background: url('../img/dark/bg-hero-desk.jpg') no-repeat 50% 0/cover
+    @media screen and (min-width: 600px) and (orientation: landscape) and (min-height: 501px)
+      background: url('../img/dark/bg-hero-desk.jpg') no-repeat 0 -150px/cover 
+    @media screen and (min-width: 601px) and (max-width: 1300px) and (orientation: portrait)
+      background: url('../img/dark/bg-hero-tab.jpg') no-repeat 50% 0/cover 
+    @media screen and (max-width: 600px) and (orientation: portrait)
+      background: url("../img/dark/bg-hero-mob.jpg") no-repeat 50% 0%/cover
+    &__details
+      background: url("../img/dark/card-desk.png") no-repeat 0% 0%/contain
+
 //   .page
 //     background-color: #040613
 //   .page__bg2
