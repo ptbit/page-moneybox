@@ -1,9 +1,14 @@
 // @media screen and (max-width: 2560px)
 @media screen and (max-width: 1700px)
 // @media screen and (max-width: 1600px)
-@media screen and (max-width: 1500px)
+@media screen and (min-width: 1500px)
   .page
-    &__hero
+  .hero
+    &__left
+      transform: scale(1.1)
+  .capsule
+    margin-top: -10px
+
       // background: url("../../img/bg-hero-desk.jpg") no-repeat 0 100%/cover
 @media screen and (max-width: 1400px)
 @media screen and (max-width: 1350px)
@@ -16,7 +21,31 @@
 @media screen and (max-width: 1150px)
 @media screen and (max-width: 1150px)
 @media screen and (max-width: 1100px)
+  .moneybox
+    &__items
+      transform: scale(0.9)
+      transform-origin: top
+    &__item
+      margin-left: -20px
+      margin-right: -20px
+    //   &--1
+    //     transform-origin: top right
+    //   &--2
+    //     transform-origin: top 
+    //   &--3
+    //     transform-origin: top left
 @media screen and (max-width: 1000px)
+  .moneybox
+    &__items
+      // transform: scale(0.8)
+    &__sub-title
+      font-size: 16px
+    &__element
+      font-size: 14px
+    &__elements
+      font-size: 14px
+    &__sub-text
+      font-size: 14px
 @media screen and (max-width: 950px)
 @media screen and (max-width: 900px)
 @media screen and (max-width: 850px)
