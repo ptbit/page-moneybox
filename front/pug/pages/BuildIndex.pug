@@ -7,30 +7,30 @@
           .glitch-img
           .glitch-img
           .glitch-img
-        //- picture.hero__img
-        //-   source(media="(min-width: 600px) and (min-height: 501px) and (orientation: landscape)" srcset="img/hero-text-desk.png")
-        //-   source(media="(min-width: 601px) and (max-width: 1300px) and (orientation: portrait)" srcset="img/hero-text-tab.png")
-        //-   source(media="(max-width: 500px) and (orientation: portrait)" srcset="img/hero-text-mob.png")
-        //-   source(media="(max-width: 950px) and (orientation: landscape) and (max-height: 500px)" srcset="img/hero-text-desk.png")
-        //-   img(src="img/hero/terminals-desk.png" alt="Terminals")
         .hero__details
           p.hero__title Грай відповідально з FAVBET.
           p.hero__text Скарбничка — функціонал для контролю витрат, що дозволяє тимчасово обмежити частину коштів на твоєму балансі, зробивши їх недоступними для гри.
-        button.hero__btn До «скарбнички»
+        a(href="/personal-office/balance/safebox/").hero__btn
+          span До «скарбнички»
       .hero__right
         .capsule 
           .capsule__inner
             .capsule__money
-              img(src="img/money/money-1.png", alt="money item 1").capsule__money--1
-              img(src="img/money/money-2.png", alt="money item 2").capsule__money--2
-              img(src="img/money/money-3.png", alt="money item 3").capsule__money--3
-              img(src="img/money/money-4.png", alt="money item 4").capsule__money--4
-              img(src="img/money/money-6.png", alt="money item 6").capsule__money--6
-              img(src="img/money/money-7.png", alt="money item 7").capsule__money--7
+              .capsule__money--1
+                img(src="img/money/money-1.png", alt="money item 1")
+              .capsule__money--2
+                img(src="img/money/money-2.png", alt="money item 2")
+              .capsule__money--3
+                img(src="img/money/money-3.png", alt="money item 3")
+              .capsule__money--4
+                img(src="img/money/money-4.png", alt="money item 4")
+              .capsule__money--6
+                img(src="img/money/money-6.png", alt="money item 6")
+              .capsule__money--7
+                img(src="img/money/money-7.png", alt="money item 7")
   section.moneybox
     h2.moneybox__title Як скористатися скарбничкою? 
     .moneybox__items
-      //- .moneybox__item.moneybox__item--4
       .moneybox__item.moneybox__item--1
         .moneybox__tab-light
         .moneybox__box.moneybox__box--1

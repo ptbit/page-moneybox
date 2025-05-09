@@ -92,6 +92,16 @@
   .capsule
     margin-top: 0
     margin-left: -125px
+  .moneybox
+    &__item
+      margin-left: -25px
+      margin-right: -25px
+    &__box--2
+      padding: 27px 16px 0 40px
+@media screen and (max-width: 810px)
+  .moneybox
+    &__box--2
+      padding: 15px 16px 0 40px
 @media screen and (max-width: 800px)
   .hero
     &__container
@@ -120,6 +130,8 @@
       height: fit-content
       position: relative
       padding: 25px 0
+      margin-left: -20px
+      margin-right: -20px
       &::before
         content: ''
         opacity: 0.8
@@ -290,11 +302,15 @@
   .moneybox
     margin-top: -40px
     &__item
-      padding: 5px 0
+      padding: 10px 0
     &__box
       transform: scale(0.9)
-@media screen and (max-width: 400px)
-@media screen and (max-width: 390px)
+@media screen and (max-width: 375px)
+  .hero
+    &__right
+      transform: scale(0.6)
+    &__left
+      margin-top: -310px
 @media screen and (max-width: 370px)
   .hero
     &__left
@@ -306,14 +322,13 @@
     &__items
       gap: 0
     &__item
-      padding: 0
+      &::before
+        width: 138px
+      &::after
+        width: 138px
       &--2
         margin-top: -20px
       &--3
         margin-top: -30px
     &__box
-      transform: scale(0.8)
-@media screen and (max-width: 340px)
-@media screen and (max-width: 320px)
-@media screen and (max-width: 312px)
-@media screen and (max-width: 300px)
+      transform: scale(0.85)

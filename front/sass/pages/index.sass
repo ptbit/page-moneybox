@@ -48,7 +48,7 @@ body.light
       right: 0
       bottom: -30px
       height: 120px
-
+      pointer-events: none
       background: linear-gradient(180deg, rgba(0, 0, 34, 0) 0%, $color-bg 100%)
 .hero
   
@@ -66,14 +66,13 @@ body.light
   &__glitch
     height: 280px
     width: 565px
-  // &__img
-  //   height: 280px
   &__details
     margin-top: -95px
     padding: 65px 52px 20px 24px
     height: 222px
     background: url("../img/card-desk.png") no-repeat 0% 0%/contain
     width: fit-content
+    margin-left: 15px
 
   &__title
     margin-bottom: 16px
@@ -94,17 +93,32 @@ body.light
     z-index: 2
     width: 248px
     height: 104px
-    background: url("../img/btn-bg.png") no-repeat 0% 0%/contain
+    display: flex
+    justify-content: center
+    align-items: center
     border: none
     cursor: pointer
-    color: white
-    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.35), 0px 0px 6px #01FCAF
-    text-align: center
-    font-size: 17px
-    font-family: $font-tektur-semibold
-    text-transform: uppercase
-    &:hover
+
+    span
+      position: relative
+      z-index: 3
+      color: $color-white
+      text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.35), 0px 0px 6px #01FCAF
+      text-align: center
+      font-size: 17px
+      font-family: $font-tektur-semibold
+      text-transform: uppercase
+    &::before
+      content: ''
+      position: absolute
+      inset: 0
       background: url("../img/btn-bg-hover.png") no-repeat 0% 0%/contain
+      opacity: 0.85
+      transition: all 0.3s linear
+    &:hover
+      &::before
+        opacity: 1
+      
 .capsule
   margin-top: -34px
   margin-left: -54px
@@ -208,11 +222,6 @@ body.light
       padding: 26px 26px 0 30px
       &::after
         animation: light 2.33s linear infinite
-    // &--4
-    //   background: none
-    //   &::after
-    //     animation: light 3.2s linear infinite
-      
   &__box
     width: 100% 
     position: relative
@@ -259,12 +268,13 @@ body.light
     column-gap: 8px
     row-gap: 4px
     flex-wrap: wrap
-    color: $color-white
-    font-family: $font-favbet-text-regular
-    font-size: 15px
+
     &--up
       margin-bottom: 4px
     li
+      color: $color-white
+      font-family: $font-favbet-text-regular
+      font-size: 15px
       position: relative
       display: flex
       gap: 8px
@@ -277,7 +287,7 @@ body.light
         height: 12px
         background: url('../img/arrow.svg')  no-repeat 0% 0%/contain
       &:first-child
-        color: white
+        color: $color-white
         &::before
           display: none
   &__sub-text
