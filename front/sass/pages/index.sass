@@ -34,9 +34,9 @@ body.light
   &__hero
     position: relative
     // height: 572px
-    background: url('../img/bg-hero-desk.jpg') no-repeat 0 -155px/cover
+    background: url('../img/bg-hero-desk.jpg') no-repeat 50% 0/cover
     @media screen and (min-width: 600px) and (orientation: landscape) and (min-height: 501px)
-      background: url('../img/bg-hero-desk.jpg') no-repeat 0 -155px/cover 
+      background: url('../img/bg-hero-desk.jpg') no-repeat 0 -150px/cover 
     @media screen and (min-width: 601px) and (max-width: 1300px) and (orientation: portrait)
       background: url('../img/bg-hero-tab.jpg') no-repeat 50% 0/cover 
     @media screen and (max-width: 600px) and (orientation: portrait)
@@ -54,7 +54,8 @@ body.light
   
   &__container
     display: flex
-    padding-bottom: 77px
+    justify-content: center
+    padding-bottom: 50px
     max-width: 1016px
     margin: 0 auto
     position: relative
@@ -104,9 +105,6 @@ body.light
     text-transform: uppercase
     &:hover
       background: url("../img/btn-bg-hover.png") no-repeat 0% 0%/contain
-      
-  &__right
-  
 .capsule
   margin-top: -34px
   margin-left: -54px
@@ -162,6 +160,8 @@ body.light
 
 .moneybox
   margin-bottom: 25px
+  &__tab-light
+    display: none
   &__title
     width: fit-content
     margin: 0 auto
@@ -186,7 +186,7 @@ body.light
     gap: 10px
   &__item
     position: relative
-    background: url('../img/item-desk-bg-2.png')  no-repeat 0% 0%/contain
+    background: url('../img/item-desk-bg.png') no-repeat 0% 0%/contain
     width: 362px
     height: 358px
     &::after
@@ -309,6 +309,14 @@ body.light
     opacity: 7
   100%
     opacity: 1
+
+@keyframes light-tab
+  0%
+    opacity: 0.4
+  50%
+    opacity: 0.1
+  100%
+    opacity: 0.4
 
 .glitch
   position: relative
