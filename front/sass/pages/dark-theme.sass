@@ -1,5 +1,7 @@
 body.dark 
-  background-color: #090B18
+  background-color: $color-bg-dark
+  .page
+    background-color: $color-bg-dark
   .hero
     background: url('../img/dark/bg-hero-desk.jpg') no-repeat 50% 0/cover
     @media screen and (min-width: 600px) and (orientation: landscape) and (min-height: 501px)
@@ -8,8 +10,32 @@ body.dark
       background: url('../img/dark/bg-hero-tab.jpg') no-repeat 50% 0/cover 
     @media screen and (max-width: 600px) and (orientation: portrait)
       background: url("../img/dark/bg-hero-mob.jpg") no-repeat 50% 0%/cover
+    &::after
+      background: linear-gradient(180deg, rgba(0, 0, 34, 0) 0%, $color-bg-dark 100%)
+      
     &__details
       background: url("../img/dark/card-desk.png") no-repeat 0% 0%/contain
+  .capsule
+    background: url("../img/dark/bg_capsule_desk.png") no-repeat 0% 0%/contain
+    &__inner
+      background: url("../img/dark/bg_capsule_inner_desk.png") no-repeat 0% 0%/contain
+
+    
+  .moneybox
+    &__item
+      background: url('../img/dark/item-desk-bg.png') no-repeat 0% 0%/contain
+      &::after
+        background: url('../img/dark/light.png')  no-repeat 50% 50%/contain
+    &__box
+      &--1
+        background: url('../img/dark/item-text-desk-bg-1.png')  no-repeat 0% 0%/contain
+      &--2
+        background: url('../img/dark/item-text-desk-bg-2.png')  no-repeat 0% 0%/contain
+      &--3
+        background: url('../img/dark/item-text-desk-bg-3.png')  no-repeat 0% 0%/contain
+
+
+
 
 //   .page
 //     background-color: #040613
